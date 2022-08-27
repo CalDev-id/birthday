@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/output.css">
+    <title>Happy Birthday</title>
+</head>
+<body class="overflow-x-hidden overflow-y-hidden">
+    <!-- NAVBARR -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="index.html" class="font-bold text-sm text-brownPrimary block py-6">HAPPY 🎉<br>BIRTHDAY</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" class="block absolute right-4 md:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white w-full right-0 top-full md:block md:static md:bg-transparent md:max-w-full">
+                        <ul class="block h-[100vh] md:flex md:h-full">
+                            <li class="group">
+                                <a href="index.html" class="text-base text-brown2 py-10 mx-8 flex group-hover:text-brown2 md:py-2">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="credit.html" class="text-base text-black py-10 mx-8 flex group-hover:text-brown2 md:py-2">Credit</a>
+                            </li>
+                            <li class="group">
+                                <a href="about.html" class="text-base text-black py-10 mx-8 flex group-hover:text-brown2 md:py-2">About Us</a>
+                            </li>
+                            <li class="group">
+                                <a href="#home" class="text-base text-black py-10 mx-8 flex group-hover:text-brown2 md:py-2">Community</a>
+                            </li>
+                            <li class="group">
+                                <a href="#home" class="text-base text-black py-10 mx-8 flex group-hover:text-brown2 md:py-2">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="pt-28 md:pt-36 relative">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 md:w-1/2 mb-5">
+                    <div class="">
+                        <img id="imghero" src="img/banner.png" alt="" class="max-w-full mx-auto">
+                    </div>
+                </div>
+
+                <div class="w-full self-center px-4 md:w-1/2">
+                    <h3 class="font-semibold text-orange text-lg md:text-xl">Selamat Ulang Tahun🎉</h3>
+                    <h1 id="bannernama" class="text-brownPrimary font-bold text-4xl mt-1 md:text-5xl">Nama Mu</h1>
+                    <h2 class="font-medium text-brown2 md:text-xl mb-5">Semoga Panjang Umur Dan Sehat Selalu</h2>
+                    <p id="isipesan" class="font-medium text-slate-500 mb-10 leading-relaxed md:text-lg">Jangan lupa bersyukur, atas semua pencapaianmu, 
+                        semua orang sayang padamu karena dirimu itu spesial</p>
+
+                    <button id="mulai" class="text-base font-semibold text-white bg-brownPrimary py-3 px-8 rounded-full hover:shadow-lg hover:bg-orange">Mulai</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALERT -->
+    <section id="alert" class="w-full absolute bg-white top-20 bg-opacity-80 h-[89vh]">
+        <div class="container">
+            <div class="nama px-8 bg-yellow pt-20 pb-20 md:mt-20 shadow-lg md:mx-auto md:w-1/2">
+                <div>
+                    <span id="close" class="font-bold text-3xl float-right text-red-600">x</span>
+                </div>
+                <h1 class="font-bold text-2xl text-brownPrimary">Selamat Datang DI Birthday Website 🎉</h1>
+                <h1 class="font-semibold text-brownPrimary mt-5"><span class="text-red-600 font-semibold text-xl">*</span> Masukkan Nama Anda </h1>
+                <div class="w-full mb-5 mt-2">
+                    <label for="name" class="text-base font-bold text-brownPrimary"></label>
+                    <input placeholder="Nama" type="text" id="name" class="w-full md:max-w-md bg-white text-dark p-2 rounded-md focus:outline-none focus:ring-brownPrimary focus:ring-1 focus:border-brownPrimary shadow-lg">
+                </div>
+
+                <p class="font-semibold text-brownPrimary mb-2"><span class="text-red-600 font-semibold text-xl">*</span> Jenis Kelamin Anda</p>
+                <div class="flex mb-5">
+                    <a href="#" id="cowo" class="bg-orange text-white px-4 py-2 rounded-full mr-3 active:bg-blue-600 shadow-lg">Laki Laki</a>
+                    <a href="#" id="cewe" class="bg-orange text-white px-4 py-2 rounded-full active:bg-blue-600 shadow-lg">Perempuan</a>
+                </div>
+
+                <h1 class="font-semibold text-brownPrimary mt-5"><span class="text-red-600 font-semibold text-xl">*</span> Masukkan Pesan</h1>
+                <div class="w-full mb-5 mt-2">
+                    <label for="name" class="text-base font-bold text-brownPrimary"></label>
+                    <input placeholder="Pesan" type="text" id="pesan" class="w-full md:max-w-md bg-white text-dark p-2 rounded-md focus:outline-none focus:ring-brownPrimary focus:ring-1 focus:border-brownPrimary h-16 shadow-lg">
+                </div>
+
+                <p class="font-semibold text-brownPrimary mb-3"><span class="text-red-600 font-semibold text-xl">*</span> Submit</p>
+                <button onclick="getNama()" id="submit" class="bg-brownPrimary text-white px-4 py-2 rounded-full shadow-lg">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- EFFECT -->
+    <canvas class="absolute top-0 left-0 w-full hidden" id="my-canvas"></canvas>
+
+    <!-- LIRIK MULAI DISINI-->
+    <section id="lirik" class="mt-20 overflow-hidden">
+        <div id="lirik2" class="container font-bold text-3xl md:text-5xl">
+
+            <h1 id="lagu" class="text-left mt-72 text-brownPrimary">
+                Selamat Ulang Tahun♪
+            </h1>
+            <h1 id="lagu2" class="text-right mt-72 text-amber-500">
+                Berkah bagaikan embun♫
+            </h1>
+            <h1 id="lagu" class="text-left mt-72 text-cyan-500">
+                Melangkah ke depan♪
+            </h1>
+            <h1 id="lagu2" class="text-right mt-72 text-slate-500">
+                hingga detik terakhir pun♫
+            </h1>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+
+            </div>
+
+            <div id="lagu" class="mt-96 text-center mb-96 text-slate-700">
+
+                <div class="bg-amber-500 w-32 mx-auto text-white text-sm font-normal h-2 rounded-xl mb-20">
+                    .
+                </div>
+
+                Blessing <br>
+                Cover Indonesia
+
+                <h1 class="text-brownPrimary mt-10">
+                    WEB ~ Heical Chandra
+                </h1>
+                
+                <h1 class="mt-7 text-amber-500">
+                    SONG ~ 
+                    fleurishana
+                </h1>
+
+                <h1 class="mt-7 text-brown2">
+                    ART ~ 
+                    Eskallia
+                </h1>
+                <h1 class="mt-7 text-orange">
+                    ART ~ 
+                    MILK
+                </h1>
+            </div>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div id="lagu" class="text-center text-5xl text-amber-500">
+                    <i class='bx bxs-music'></i>
+                </div>
+            </div>
+
+            <h1 id="lagu2" class="text-right mt-96 text-violet-500 md:mt-0">
+                Walaupun orang lain♪
+            </h1>
+            <h1 id="lagu" class="text-left mt-72 text-teal-500">
+                mengecap dirimu berbeda♫
+            </h1>
+            <h1 id="lagu2" class="text-right mt-96 text-pink-500">
+                Dan juga mereka menilaimu seenaknya saja♪
+            </h1>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+
+            </div>
+
+
+            <h1 id="lagu" class="text-left mt-96 text-rose-500">
+                Tetapi jangan masukkan♫
+            </h1>
+            <h1 id="lagu2" class="text-right mt-72 text-green-500">
+                kata mereka dalam hati♪
+            </h1>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+            </div>
+            
+            <h1 id="lagu" class="text-left mt-64 md:mt-0 text-sky-500">
+                Cukup abaikan dan usaha jadi diri sendiri♫
+            </h1>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+
+            </div>
+
+            <h1 id="lagu2" class="text-right mt-96 md:mt-10 text-emerald-500">
+                Oh.. saatnya bangun..♪
+            </h1>
+
+            <h1 id="lagu" class="text-left mt-72 text-purple-500">
+                Jangan matikan dulu lampumu♫
+            </h1>
+            <h1 id="lagu2" class="text-right mt-72 text-lime-500">
+                Oh.. saatnya bangun..♪
+            </h1>
+
+            <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+            </div>
+
+            <h1 id="lagu" class="text-left mt-72 text-indigo-500">
+                Perhatikanlah langkahmu♫
+            </h1>
+            <h1 id="lagu2" class="text-right mt-72 text-blue-500">
+                Ayo lihatlah baik-baik kearahku♪
+            </h1>
+
+           <!-- JEDA -->
+            <div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+                <div class="text-white">.</div>
+            </div>
+
+            <h1 id="lagu" class="text-left mt-72 text-pink-500">
+                Kamu kan lihat orang yang menyayangimu♫
+            </h1>
+
+           <!-- JEDA -->
+           <div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-center text-5xl text-amber-500">
+                <i class='bx bxs-music'></i>
+            </div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+        </div>
+
+            <h1 id="lagu2" class="text-right mt-72 text-stone-500">
+                Bersyukurlah kepada hidupmu♪
+            </h1>
+
+           <!-- JEDA -->
+           <div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+        </div>
+
+            <h1 id="lagu" class="text-left mt-96 text-red-500">
+                Selamat ulang tahun♫
+            </h1>
+
+            <h1 id="lagu2" class="text-right mt-96 text-sky-500">
+                Berkah bagaikan embun♪
+            </h1>
+
+            <h1 id="lagu2" class="text-left mt-96 text-lime-500">
+                Tidak peduli dunia hancur sekalipun♫
+            </h1>
+
+           <!-- JEDA -->
+           <div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+            <div class="text-white">.</div>
+        </div>
+
+            <h1 id="lagu" class="text-right mt-96 text-rose-500">
+                Selamat ulang tahun♪
+            </h1>
+
+            <h1 id="lagu2" class="text-left mt-96 text-slate-500">
+                Berkah bagaikan embun♫
+            </h1>
+
+            <h1 id="lagu" class="text-right mt-96 text-purple-500">
+                melangkah kedepan♪
+            </h1>
+
+            <h1 id="lagu2" class="text-left mt-96 text-sky-500">
+                hingga detik terakhirpun♫
+            </h1>
+
+            <h1 id="lagu" class="text-right mt-96 text-cyan-500">
+                Sorak sorai♪
+            </h1>
+
+            <h1 id="lagu2" class="text-left mt-96 text-indigo-500">
+                hiduplah di dunia♫
+            </h1>
+
+            <h1 id="lagu" class="text-right mt-96 text-purple-500">
+                Sorak sorai♪
+            </h1>
+
+            <h1 id="lagu2" class="text-left mt-96 text-teal-500">
+                jadilah bahagia♫
+            </h1>
+            <div id="lagu" class="mt-96 text-center mb-96 text-slate-700">
+
+                <div class="bg-amber-500 w-32 mx-auto text-white text-sm font-normal h-2 rounded-xl mb-20">
+                    .
+                </div>
+
+                Blessing <br>
+                Cover Indonesia
+
+                <h1 class="text-brownPrimary mt-10">
+                    WEB ~ Heical Chandra
+                </h1>
+                
+                <h1 class="mt-7 text-amber-500">
+                    SONG ~ 
+                    fleurishana
+                </h1>
+
+                <h1 class="mt-7 text-brown2">
+                    ART ~ 
+                    Eskallia
+                </h1>
+                <h1 class="mt-7 text-orange">
+                    ART ~ 
+                    MILK
+                </h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
