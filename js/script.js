@@ -24,7 +24,7 @@ window.onscroll = function(){
 // audio
 
 const audio = new Audio();
-audio.src = "song/blessing.mp3";
+audio.src = "./song/blessing.mp3";
 
 
 // AUTO SCROLL
