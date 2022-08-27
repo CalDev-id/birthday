@@ -707,6 +707,10 @@ video {
   margin-top: 13rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1183,6 +1187,11 @@ video {
 .active\:bg-blue-600:active {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.active\:bg-brownPrimary:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 61 52 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:text-brown2 {

@@ -64,6 +64,16 @@ const imghero = document.querySelector('#imghero');
 const cewe = document.querySelector('#cewe');
 const cowo = document.querySelector('#cowo');
 
+//if clicked
+cowo.addEventListener("click", function(){
+    cowo.classList.toggle('bg-orange')
+    cowo.classList.toggle('bg-brownPrimary')
+});
+cewe.addEventListener("click", function(){
+    cewe.classList.toggle('bg-orange')
+    cewe.classList.toggle('bg-brownPrimary')
+});
+
 cewe.addEventListener("click", function(){
     imghero.setAttribute('src', 'img/' + 'bannercewe' + '.jpg' )
 });
